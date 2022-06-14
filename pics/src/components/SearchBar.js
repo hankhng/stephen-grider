@@ -6,6 +6,7 @@ export default class SearchBar extends Component {
   onFormSubmit = (event) => {
     event.preventDefault();
 
+    // use this.props.submitProp to pass this as a prop back up to parent (App.js)
     this.props.submitProp(this.state.term);
   };
 
