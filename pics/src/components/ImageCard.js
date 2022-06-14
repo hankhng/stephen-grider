@@ -7,7 +7,6 @@ export class ImageCard extends Component {
     this.imageRef = React.createRef();
   }
 
-
   render() {
     const { description, urls } = this.props.image
 
