@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export class ImageCard extends Component {
   constructor(props) {
@@ -8,15 +8,11 @@ export class ImageCard extends Component {
   }
 
   render() {
-    const { description, urls } = this.props.image
+    const { description, urls } = this.props.image;
 
     return (
       <div>
-        <img
-          ref={this.imageRef}
-          alt={description}
-          src={urls.regular}
-        />
+        <img ref={this.imageRef} alt={description} src={urls.regular} />
       </div>
     );
   }

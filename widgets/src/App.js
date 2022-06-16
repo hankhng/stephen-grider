@@ -3,6 +3,7 @@ import React, { useState } from "react";
 // import Search from "./components/Search";
 import Dropdown from "./components/Dropdown";
 import ControlledAccordions from "./components/ControlledAccordions";
+import Translate from "./components/Translate";
 
 // const items = [
 //   {
@@ -36,24 +37,18 @@ const options = [
 
 const App = () => {
   const [selected, setSelected] = useState(options[0]);
-  const [showDropdown, setShowDropdown] = useState(true);
 
   return (
     <div>
       {/* <Accordion items={items} /> */}
       {/* <Search /> */}
       <ControlledAccordions />
-      <br />
-      <button onClick={() => setShowDropdown(!showDropdown)}>
-        Toggle Dropdown
-      </button>
-      {showDropdown ? (
-        <Dropdown
-          selected={selected}
-          onSelectedChange={setSelected}
-          options={options}
-        />
-      ) : null}
+      <Dropdown
+        selected={selected}
+        onSelectedChange={setSelected}
+        options={options}
+      />
+      <Translate />
     </div>
   );
 };
