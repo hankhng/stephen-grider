@@ -9,7 +9,7 @@ const Search = () => {
   useEffect(() => {
     const timerId = setTimeout(() => {
       setdebouncedTerm(term);
-    }, 1000);
+    }, 500);
 
     // clean up function to clear the timeout
     // it's not called the first time the component is rendered
