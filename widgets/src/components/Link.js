@@ -9,18 +9,14 @@ const Link = ({ className, href, children }) => {
     event.preventDefault();
 
     //changes the href to what link was clicked
-    window.history.pushState({}, '', href);
+    window.history.pushState({}, "", href);
 
-    const navEvent = new PopStateEvent('popstate');
+    const navEvent = new PopStateEvent("popstate");
     window.dispatchEvent(navEvent);
   };
 
   return (
-    <a
-      onClick={onClickFunction}
-      className={className}
-      href={href}
-    >
+    <a onClick={onClickFunction} className={className} href={href}>
       {children}
     </a>
   );
