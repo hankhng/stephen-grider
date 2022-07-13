@@ -14,7 +14,7 @@ const Header = () => {
         Dropdown
       </Link>
       <Link href="/translate" className="item">
-        Translate test
+        Translate
       </Link>
       <Link href="/muiaccordion" className="item">
         MUI Accordion
